@@ -1,5 +1,0 @@
-# {.center .center-x}
-
-<a href="https://www.good.cnrs.fr/" target="_blank"><img src="https://raw.githubusercontent.com/mcanouil/hex-stickers/main/SVG/umr1283_8199.svg" width = "25%"/></br>
-<i>www.good.cnrs.fr</i>
-</a>

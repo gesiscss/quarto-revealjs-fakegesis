@@ -6,11 +6,11 @@ institute: Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
 self-contained: true
-format:
-  umr1283-revealjs: default
+format: umr1283-revealjs
 ---
 
-```{r, include = FALSE}
+```{r}
+#| include: false
 showtext::showtext_auto()
 source(normalizePath("_extensions/umr1283/setup-ggplot2-umr1283.R"))
 ```
@@ -22,11 +22,11 @@ source(normalizePath("_extensions/umr1283/setup-ggplot2-umr1283.R"))
 `some code` and some text.  
 A URL [www.good.cnrs.fr](https://www.good.cnrs.fr/).
 
-```{r, echo = TRUE}
+```{r}
 1 + 1
 ```
 
-```{r, echo = TRUE}
+```{r}
 x <- 1
 y <- x + 1 #<<
 y
@@ -34,7 +34,8 @@ y
 
 ## GGPLOT2 With `code`
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point()
 ```
@@ -45,4 +46,4 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point()
 
 With only text
 
-{{< include _extensions/umr1283/about.qmd >}}
+# [www.good.cnrs.fr](http://www.good.cnrs.fr) {.center .center-x}

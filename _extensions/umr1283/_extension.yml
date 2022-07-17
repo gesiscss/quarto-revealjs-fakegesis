@@ -7,5 +7,5 @@ contributes:
       slide-number: c
       highlight-style: github
       theme: umr1283.scss
-      footer: <a href="https:/www.good.cnrs.fr/">www.good.cnrs.fr</a>
+      footer: "[www.good.cnrs.fr](http://www.good.cnrs.fr)"
       logo: umr1283_8199.svg
