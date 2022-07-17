@@ -1,0 +1,11 @@
+title: Inserm U1283 / CNRS UMR8199 Presentation Template
+author: Mickaël CANOUIL
+version: 1.0.0
+contributes:
+  formats:
+    revealjs:
+      slide-number: c
+      highlight-style: github
+      theme: umr1283.scss
+      footer: <a href="https:/www.good.cnrs.fr/">www.good.cnrs.fr</a>
+      logo: umr1283_8199.svg
