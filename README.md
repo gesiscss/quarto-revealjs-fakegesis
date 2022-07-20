@@ -1,4 +1,3 @@
-
 # Quarto reveal.js template
 
 <!-- badges: start -->
