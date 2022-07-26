@@ -8,10 +8,10 @@ This is a repository for `Quarto` `reveal.js` template.
 
 ## Installation
 
-This [Quarto](quarto.org) extension can be installed/used using the following command:
+This [Quarto](quarto.org) template can be installed/used using the following command:
 
 ```bash
-quarto use extension umr1283/quarto-revealjs-umr1283
+quarto use template umr1283/quarto-revealjs-umr1283
 ```
 
 ## Documentation
