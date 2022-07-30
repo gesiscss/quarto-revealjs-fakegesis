@@ -9,3 +9,5 @@ contributes:
       theme: umr1283.scss
       footer: "[www.good.cnrs.fr](http://www.good.cnrs.fr)"
       logo: umr1283_8199.svg
+      format-resources:
+        - setup-ggplot2-umr1283.R
