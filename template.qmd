@@ -12,7 +12,7 @@ format: u1283-revealjs
 ```{r}
 #| include: false
 showtext::showtext_auto()
-source(normalizePath("_extensions/umr1283/umr1283/setup-ggplot2-umr1283.R"))
+source(normalizePath("_extensions/umr1283/u1283/setup-ggplot2-umr1283.R"))
 ```
 
 ## Introduction
