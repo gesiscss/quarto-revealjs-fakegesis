@@ -5,6 +5,10 @@ on:
 
 name: Quarto Publish
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -46,7 +50,7 @@ jobs:
           rm -rf index
           git add template.png
           git commit -m "ci: update thumbs" || echo "No changes to commit"
-          git push origin || echo "No changes to commit"  
+          git push origin || echo "No changes to commit" 
       - name: Render and Publish
         if: ${{ false }}
         uses: quarto-dev/quarto-actions/publish@v2

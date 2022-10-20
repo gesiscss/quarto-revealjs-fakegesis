@@ -1,8 +1,5 @@
 /*-- scss:defaults --*/
 
-@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
-@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
-
 // fonts
 $font-family-sans-serif: 'Verdana', 'Corbel', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', sans-serif !default;
    
@@ -33,16 +30,27 @@ $code-block-border-color: $body-color !default;
   text-align: left;
 }
 
-#title-slide .institute {
+#title-slide .institute, #title-slide .quarto-title-affiliation {
   font-style: italic;
   font-size: 60%;
 }
 
-#title-slide .author {
+#title-slide .author, #title-slide .quarto-title-author-name {
   color: $body-color;
 }
 
-#title-slide p.author::before {
+#title-slide .quarto-title-authors {
+  display: flex;
+  justify-content: left;
+
+  .quarto-title-author {
+    padding-left: 0em;
+    padding-right: 0em;
+    width: 100%;
+  }
+}
+
+#title-slide p.author::before, #title-slide div.quarto-title-author::before {
   content: "";
   display: block;
   border: none;
@@ -91,4 +99,13 @@ $code-block-border-color: $body-color !default;
 
 .center-x {
   text-align: center;
+}
+
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
 }
