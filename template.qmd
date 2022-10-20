@@ -5,7 +5,7 @@ author: Mickaël Canouil, *Ph.D.*
 institute: Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
-self-contained: true
+embed-resources: true
 format: u1283-revealjs
 ---
 
