@@ -6,13 +6,13 @@ institute: Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
 embed-resources: true
-format: u1283-revealjs
+format: umr1283-revealjs
 ---
 
 ```{r}
 #| include: false
 showtext::showtext_auto()
-source("_extensions/umr1283/u1283/setup-ggplot2-umr1283.R")
+source("_extensions/umr1283/umr1283/setup-ggplot2-umr1283.R")
 ```
 
 ## Introduction

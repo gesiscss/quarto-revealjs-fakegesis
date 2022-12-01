@@ -28,40 +28,43 @@ $code-block-border-color: $body-color !default;
 
 #title-slide {
   text-align: left;
-}
 
-#title-slide .institute, #title-slide .quarto-title-affiliation {
-  font-style: italic;
-  font-size: 60%;
-}
-
-#title-slide .author, #title-slide .quarto-title-author-name {
-  color: $body-color;
-}
-
-#title-slide .quarto-title-authors {
-  display: flex;
-  justify-content: left;
-
-  .quarto-title-author {
-    padding-left: 0em;
-    padding-right: 0em;
-    width: 100%;
+  .institute,
+  .quarto-title-affiliation {
+    font-style: italic;
+    font-size: 60%;
   }
-}
 
-#title-slide p.author::before, #title-slide div.quarto-title-author::before {
-  content: "";
-  display: block;
-  border: none;
-  background-color: $body-color;
-  color: $body-color;
-  height: 3px;
-  margin-bottom: 1em;
-}
+  .author,
+  .quarto-title-author-name {
+    color: $body-color;
+  }
 
-#title-slide p, #title-slide a {
-  color: #93be25;
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+  p.author::before,
+  div.quarto-title-author::before {
+    content: "";
+    display: block;
+    border: none;
+    background-color: $body-color;
+    color: $body-color;
+    height: 3px;
+    margin-bottom: 1em;
+  }
+
+  p, a {
+    color: #93be25;
+  }
 }
 
 .footer {
@@ -85,7 +88,8 @@ $code-block-border-color: $body-color !default;
   bottom: 10px !important;
 }
 
-.slide-number, .reveal.has-logo .slide-number {
+.slide-number,
+.reveal.has-logo .slide-number {
   bottom: 10px !important;
   right: 10px !important;
   top: unset !important;
