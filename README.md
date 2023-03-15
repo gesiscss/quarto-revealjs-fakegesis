@@ -10,6 +10,20 @@ This [Quarto](quarto.org) template can be installed/used using the following com
 quarto use template chainsawriot/quarto-revealjs-fakegesis
 ```
 
+## Speedrun
+
+```bash
+## Step 1: create an empty directory
+mkdir slides
+cd slides
+## Step 2: use the template
+quarto use template chainsawriot/quarto-revealjs-fakegesis --no-prompt
+## Step 3: render
+quarto render slides.qmd
+## Step 4: there is no step 4
+xdg-open slides.html
+```
+
 ## Documentation
 
 [`Quarto` documentation on `reveal.js` format.](https://quarto.org/docs/presentations/revealjs/)
