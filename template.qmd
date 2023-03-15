@@ -1,10 +1,10 @@
 ---
 title: "Daten, Service und Analysen für die Wahlforschung"
 subtitle: " Erhebungsverfahren und Datenqualität"
-author: Christof Wolf
+author: Erika Mustermann
 institute: GESIS
 date: today
-date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+date-format: "YYYY-MM-DD"
 footer: "@gesis_org"
 embed-resources: true
 format: fakegesis-revealjs
@@ -18,10 +18,33 @@ format: fakegesis-revealjs
 
 A URL: [www.gesis.org](https://www.gesis.org).
 
+## {auto-animate="true"}
+
 ```r
-# Why should you put this code in all of your scripts?
+# Why do you put this code in all of your R scripts?
+hello <- "world!"
+```
+## {auto-animate="true"}
+
+```r
+# Why do you put this code in all of your R scripts?
 rm(list = ls(all=TRUE))
 hello <- "world!"
+```
+
+## Code
+
+Too many parentheses.
+
+```{.lisp code-line-numbers="1,3,7"}
+(defun reprex ()
+  "Create a reprex from the region"
+  (interactive)
+  (save-excursion
+	(if (use-region-p)
+	    (kill-ring-save (region-beginning) (region-end)))
+	(ess-eval-linewise "reprex::reprex()" "Creating reprex" nil nil)
+    ))
 ```
 
 ## A ggplot figure
@@ -31,6 +54,10 @@ hello <- "world!"
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point()
 ```
+
+## Katze!
+
+![](https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg)
 
 ## Bullet points
 
@@ -79,5 +106,26 @@ So dramatic...
 
 $$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
 
-# Au revoir ! {.center .center-x}
+## Some reveal.js features {transition="zoom"}
 
+* Zoom: `Alt + Click` (or `Ctrl + Click` on Linux)
+* Speaker view: press `s`
+* Full screen: press `f`
+* Click the hamburger menu or press `m` ^[pdf export]
+* Black out: press `b`
+
+::: footer
+And the footer is bypassed.
+:::
+
+::: aside
+This is a good place to put your references.
+:::
+
+## {transition="concave"}
+
+::: {.r-fit-text}
+Surprise!
+:::
+
+# Au revoir ! {.center-x background-image="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg" background-size="100%"}
