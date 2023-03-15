@@ -1,38 +1,30 @@
 ---
-title: "A Title"
-subtitle: "A Subtitle"
-author: Mickaël Canouil, *Ph.D.*
-institute: Inserm U1283 / CNRS UMR8199 / Institut Pasteur de Lille / Université de Lille
+title: "Daten, Service und Analysen für die Wahlforschung"
+subtitle: " Erhebungsverfahren und Datenqualität"
+author: Christof Wolf
+institute: GESIS
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+footer: "@gesis_org"
 embed-resources: true
-format: umr1283-revealjs
+format: fakegesis-revealjs
 ---
-
-```{r}
-#| include: false
-showtext::showtext_auto()
-source("_extensions/umr1283/umr1283/setup-ggplot2-umr1283.R")
-```
 
 ## Introduction
 
 ### Subtitle
 
-`some code` and some text.  
-A URL [www.good.cnrs.fr](https://www.good.cnrs.fr/).
+`some code` and some text.
 
-```{r}
-1 + 1
+A URL: [www.gesis.org](https://www.gesis.org).
+
+```r
+# Why should you put this code in all of your scripts?
+rm(list = ls(all=TRUE))
+hello <- "world!"
 ```
 
-```{r}
-x <- 1
-y <- x + 1 #<<
-y
-```
-
-## GGPLOT2 With `code`
+## A ggplot figure
 
 ```{r}
 #| echo: false
@@ -40,10 +32,30 @@ library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point()
 ```
 
-# PART 1 With `code` {.center .center-x}
+## Bullet points
 
-## New slide
+* My point1
+* My point2
+* My point3
 
-With only text
+## A table
 
-# [www.good.cnrs.fr](http://www.good.cnrs.fr) {.center .center-x}
+|                        | **Same Data** | **Different Data** |
+|------------------------|---------------|--------------------|
+| **Same Analysis**      | Reproducible  | Replicable         |
+| **Different Analysis** | Robust        | Generalisable      |
+
+::: {style="font-size: 0.3em"}
+
+Source: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)
+
+:::
+
+# This is important {.center .center-x}
+
+## Equation
+
+$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+
+# Au revoir ! {.center .center-x}
+

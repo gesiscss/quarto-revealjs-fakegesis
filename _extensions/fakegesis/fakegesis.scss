@@ -1,18 +1,21 @@
 /*-- scss:defaults --*/
 
 // fonts
-$font-family-sans-serif: 'Verdana', 'Corbel', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', sans-serif !default;
-   
+$font-family-sans-serif: 'Helvetica' !default;
+
 // colors
 $body-bg: #ffffff !default;
-$body-color: #2a9bd3 !default;
-$link-color: $body-color !default;
+$body-color: #000000 !default;
+$link-color: #58748f !default;
 
-$code-bg: $body-color !default;
-$code-color: $body-bg !default;
-
-$code-block-bg: #d3e5a7 !default;
+$code-block-bg: #ffffdc !default;
 $code-block-border-color: $body-color !default;
+
+$code-bg: #c6d1dc !default;
+$code-color: $link-color !default;
+$code-block-bg-alpha: -.1 !default;
+
+$presentation-heading-color: $link-color !default;
 
 /*-- scss:rules --*/
 
@@ -31,7 +34,7 @@ $code-block-border-color: $body-color !default;
 
   .institute,
   .quarto-title-affiliation {
-    font-style: italic;
+    // font-style: italic;
     font-size: 60%;
   }
 
@@ -63,22 +66,22 @@ $code-block-border-color: $body-color !default;
   }
 
   p, a {
-    color: #93be25;
+    color: $link-color;
   }
 }
 
 .footer {
   bottom: 10px !important;
-  color: $body-color !important;
+  // color: #58748f !important;
 }
 
 .slide-logo {
   display: block !important;
   position: fixed !important;
   top: 0 !important;
-  right: 10px !important;
+  left: 10px !important;
   max-height: 15% !important;
-  height: 100% !important;
+  height: 5% !important;
   width: auto !important;
   color: $body-color !important;
 }
@@ -102,7 +105,9 @@ $code-block-border-color: $body-color !default;
 }
 
 .center-x {
-  text-align: center;
+    text-align: center;
+    background-color: $code-bg;
+    // color: #58748f ;
 }
 
 .center-xy {
