@@ -16,7 +16,9 @@ format: fakegesis-revealjs
 
 `some code` and some text.
 
-A URL: [www.gesis.org](https://www.gesis.org).
+A URL: [https://quarto.org/](https://quarto.org/){preview-link="true"}.
+
+The above URL has preview.
 
 ## {auto-animate="true"}
 
@@ -34,9 +36,13 @@ hello <- "world!"
 
 ## Code
 
-Too many parentheses.
+Create an emacs lisp command
 
-```{.lisp code-line-numbers="1,3,7"}
+1. use `defun` to create a function
+2. call `interactive` to make the function a command
+3. `save-excursion` preserves the current point (location of the cursor)
+
+```{.lisp code-line-numbers="|1|3|4"}
 (defun reprex ()
   "Create a reprex from the region"
   (interactive)
@@ -83,11 +89,42 @@ Source: [The Turing Way](https://the-turing-way.netlify.app/reproducible-researc
 :::: {.columns}
 
 ::: {.column width="40%"}
-Left column
+Graphviz is supported.
+
+```dot
+graph G {
+  layout=neato
+  GESIS -- CSS;
+  GESIS -- DRS;
+  GESIS -- DSS;
+  GESIS -- SDS;
+  GESIS -- SDM;
+  GESIS -- KTS;
+  CSS -- DSM;
+  CSS -- TSA;
+  CSS -- DDD;
+  CSS -- DSO;
+}
+```
 :::
 
 ::: {.column width="60%"}
-Right column
+```{dot}
+//| fig-width: 6.5
+graph G {
+  layout=neato
+  GESIS -- CSS;
+  GESIS -- DRS;
+  GESIS -- DSS;
+  GESIS -- SDS;
+  GESIS -- SDM;
+  GESIS -- KTS;
+  CSS -- DSM;
+  CSS -- TSA;
+  CSS -- DDD;
+  CSS -- DSO;
+}
+```
 :::
 
 ::::
