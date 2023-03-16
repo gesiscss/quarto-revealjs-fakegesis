@@ -2,6 +2,8 @@
 
 This is a repository for `Quarto` `reveal.js` template. And this is not an official product. Please use the official Powerpoint template.
 
+But this is a demo: [https://chainsawriot.github.io/fakegesis/](https://chainsawriot.github.io/fakegesis/)
+
 ## Installation
 
 This [Quarto](quarto.org) template can be installed/used using the following command:
