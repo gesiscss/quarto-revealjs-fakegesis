@@ -77,16 +77,16 @@ $presentation-heading-color: $link-color !default;
 
 .reveal .progress {
     top: 0 !important;
-    height: 15px !important;
+    height: 2% !important;
 }
 
 .slide-logo {
   display: block !important;
   position: fixed !important;
-  top: 10px !important;
-  left: 10px !important;
-  max-height: 15% !important;
-  height: 5% !important;
+  top: 2% !important;
+  left: 1.5% !important;
+  max-height: 10% !important;
+  height: 3.5% !important;
   width: auto !important;
   color: $body-color !important;
 }
