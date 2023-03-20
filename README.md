@@ -14,6 +14,8 @@ quarto use template chainsawriot/quarto-revealjs-fakegesis
 
 ## Speedrun
 
+For this particular example, you'll need R, `ggplot2` and `plotly`.
+
 ```bash
 ## Step 1: create an empty directory
 mkdir slides

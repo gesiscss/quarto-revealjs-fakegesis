@@ -53,12 +53,26 @@ Create an emacs lisp command
     ))
 ```
 
-## A ggplot figure
+## A ggplot figure (static)
 
 ```{r}
 #| echo: false
+#| fig-height: 6
+#| fig-width: 10
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point()
+```
+
+## The same ggplot figure (ggplotly)
+
+```{r}
+#| echo: false
+#| fig-height: 2
+#| fig-width: 5
+library(ggplot2)
+library(plotly)
+fig <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
+ggplotly(fig, height = 600, width = 1000)
 ```
 
 ## Katze!
@@ -139,9 +153,13 @@ So dramatic...
 
 # This is important {.center .center-x}
 
-## Equation
+## Equations
 
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+$$v= u + at$$
+$$s = \frac{u+v}{2}t$$
+$$s = ut + \frac{1}{2}at^2$$
+$$s = vt – \frac{1}{2}at^2$$
+$$v^2 = u^2 + 2as$$
 
 ## Some reveal.js features {transition="zoom"}
 
